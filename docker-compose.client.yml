@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  ngrok:
+    image: xanmarta/duckproxy-client
+    network_mode: host
+    environment:
+      - TOKEN=
+      - PORT=25565
+      - PROTO=tcp
+      - REGION=ap
+      - TARGET=

@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  duckproxy:
+    image: xanmarta/duckproxy-proxy
+    network_mode: host
+    environment:
+      - APP_PORT=8000
+      - SRC_PORT=25565
+    restart: on-failure:5
